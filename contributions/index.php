@@ -3,16 +3,16 @@
   $limit = isset($_POST["limit-records"]) ? $_POST["limit-records"] : 5000;
   $page = isset($_GET['page']) ? $_GET['page'] : 1;
   $start = ($page - 1) * $limit;
-  $result = $dbconnection->query("SELECT * FROM contributions");
+  $result = $dbconnection->query("SELECT * FROM entries");
   $contributions = $result->fetch_all(MYSQLI_ASSOC);
 
-  $result1 = $conn->query("SELECT count(ID) AS ID FROM entries");
+  $result1 = $dbconnection->query("SELECT count(ID) AS ID FROM entries");
   $contCount = $result1->fetch_all(MYSQLI_ASSOC);
   $total = $contCount[0]['ID'];
   $pages = ceil( $total / $limit );
 
   $Previous = $page - 1;
-  $Next ? $page + 1;
+  $Next = $page + 1;
 ?>
 <!DOCTYPE html>
 <html>
