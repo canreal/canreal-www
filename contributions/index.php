@@ -59,7 +59,7 @@
       <thead>
         <tr>
           <th>ID</th>
-          <th>Date</th>
+          <th>Date [yyyy-MM-dd]</th>
           <th>Username</th>
           <th>Platform</th>
           <th>Contribution made for platform</th>
@@ -77,7 +77,7 @@
             <td><?= $contribution['Platform']; ?></td>
             <td><?= $contribution['Dest_Platform']; ?></td>
             <td><?= $contribution['Description']; ?></td>
-            <td><?= $contribution['Link']; ?></td>
+            <td><a href="<?= $contribution['Link']; ?>"><?= $contribution['Link']; ?></a></td>
             <td><?= $contribution['AddedBy']; ?></td>
           </tr>
         <?php endforeach; ?>
