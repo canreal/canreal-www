@@ -59,6 +59,7 @@
       <thead>
         <tr>
           <th>ID</th>
+          <th>Date</th>
           <th>Username</th>
           <th>Platform</th>
           <th>Contribution made for platform</th>
