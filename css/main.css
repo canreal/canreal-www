@@ -94,6 +94,18 @@ body{
   text-transform: uppercase;
 }
 
+.carousel-caption h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.carousel-item h5 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.btn {
+  font-family: 'Nunito', sans-serif;
+}
+
 .container h1 {
   font-family: 'Nunito', sans-serif;
 }
@@ -136,6 +148,10 @@ body{
   padding: 100px 0;
 }
 
+#social-media h1 title {
+  font-family: 'Nunito', sans-serif;
+}
+
 #social-media p{
   font-size: 36px;
   font-weight: 600;
@@ -155,6 +171,7 @@ body{
 #footer{
   background-image: linear-gradient(to right, #a517ba, #5f1782);
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 .separator-2-img{
@@ -163,6 +180,7 @@ body{
 
 .footer-box{
   padding: 20px;
+  font-family: 'Nunito', sans-serif;
 }
 
 .footer-box img{
@@ -173,25 +191,33 @@ body{
 .footer-box a{
   text-decoration: none;
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 .footer-box a:visited{
   text-decoration: none;
   color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 .footer-box ul li{
   list-style: none;
   text-decoration: none;
+  font-family: 'Nunito', sans-serif;
 }
 
 hr{
   background-color: #fff;
+  font-family: 'Nunito', sans-serif;
 }
 
 .copyright{
   margin-bottom: 0;
   padding-bottom: 20px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.content {
+  margin-top: 10px;
 }
