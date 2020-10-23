@@ -4,7 +4,7 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* The theming of the navbar */
@@ -50,6 +50,10 @@ body{
   padding-top: 5%;
 }
 
+.col-md-6 {
+  font-family: 'Nunito', sans-serif;
+}
+
 .col-md-6 h2{
   font-size: 40px;
   font-weight: 600;
@@ -88,6 +92,10 @@ body{
   padding: 5px;
   margin-top: 25px;
   text-transform: uppercase;
+}
+
+.container h1 {
+  font-family: 'Nunito', sans-serif;
 }
 
 .container button{
