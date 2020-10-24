@@ -1,0 +1,32 @@
+.btn {
+    color: #fff;
+    background-color: #ed8a00;
+    border-color: #ed8a00;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ed8a00;
+    border-color: #ed8a00;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #d57c00;
+    border-color: #d57c00;
+}
+
+.table, .table-sm, .table-hover {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.navbar {
+  background-color: #d57c00;
+}
+
+.alert-primary {
+  color: #fff;
+  background-color: #ed8a00;
+  border-color: #ed8a00;
+}
