@@ -81,7 +81,7 @@
           <tr>
             <td><?= $contribution['ID']; ?></td>
             <td><?= $contribution['Date']; ?></td>
-            <td><?= $contribution['Username']; ?></td>
+            <td><?= $dbconnection->query("SELECT `Username` FROM `users` WHERE `UserID` = '" . $contribution['UserID'] . "'")->fetch_all(MYSQLI_ASSOC)[0]['Username']; ?></td>
             <td><?= $contribution['Platform']; ?></td>
             <td><?= $contribution['Dest_Platform']; ?></td>
             <td><?= $contribution['Description']; ?></td>
