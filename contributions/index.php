@@ -82,8 +82,8 @@
             <td><?= $contribution['ID']; ?></td>
             <td><?= $contribution['Date']; ?></td>
             <td><?= $dbconnection->query("SELECT `Username` FROM `users` WHERE `UserID` = '" . $contribution['UserID'] . "'")->fetch_all(MYSQLI_ASSOC)[0]['Username']; ?></td>
-            <td><?= $contribution['Platform']; ?></td>
-            <td><?= $contribution['Dest_Platform']; ?></td>
+            <td><?= $dbconnection->query("SELECT `Platform` FROM `platforms` WHERE `PlatformID` = '" . $contribution['PlatformID'] . "'")->fetch_all(MYSQLI_ASSOC)[0]['Platform']; ?></td>
+            <td><?= $dbconnection->query("SELECT `Platform` FROM `platforms` WHERE `PlatformID` = '" . $contribution['DestPlatformID'] . "'")->fetch_all(MYSQLI_ASSOC)[0]['Platform']; ?></td>
             <td><?= $contribution['Description']; ?></td>
             <td>
               <?php
@@ -94,7 +94,7 @@
                 }
               ?>
             </td>
-            <td><?= $contribution['AddedBy']; ?></td>
+            <td><?= $dbconnection->query("SELECT `Username` FROM `staffMembers` WHERE `StaffID` = '" . $contribution['AddedBy'] . "'")->fetch_all(MYSQLI_ASSOC)[0]['Username']; ?></td>
           </tr>
         <?php endforeach; ?>
       </tbody>
