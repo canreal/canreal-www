@@ -3,7 +3,7 @@ This is the repository for the Canreal website. The whole code of the website ca
 
 The website will be improved frequently. New features will be added from time to time and the project can get pretty complex by time. Have fun developing or reading!
 
-Current website version: 1.1.1 (5th June 2020)
+Current website version: 1.1.3 (25th November 2020)
 
 ### What is Canreal?
 Canreal is THE Hytale MMORPG-Server, currently in development. If you want to read more about Canreal you should visit our [main repository](https://github.com/Canreal/about-canreal) with the best and shortest anwers.
