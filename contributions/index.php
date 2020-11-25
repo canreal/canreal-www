@@ -6,6 +6,8 @@
   $result = $dbconnection->query("SELECT * FROM entries");
   $contributions = $result->fetch_all(MYSQLI_ASSOC);
 
+  $getUsername = $dbconnection->query("SELECT `Username` FROM `users` WHERE `UserID` = '" + $contribution['UserID'] + "'");
+
   $result1 = $dbconnection->query("SELECT count(ID) AS ID FROM entries");
   $contCount = $result1->fetch_all(MYSQLI_ASSOC);
   $total = $contCount[0]['ID'];
@@ -81,7 +83,7 @@
           <tr>
             <td><?= $contribution['ID']; ?></td>
             <td><?= $contribution['Date']; ?></td>
-            <td><?= $contribution['Username']; ?></td>
+            <td><?= $getUsername; ?></td>
             <td><?= $contribution['Platform']; ?></td>
             <td><?= $contribution['Dest_Platform']; ?></td>
             <td><?= $contribution['Description']; ?></td>
